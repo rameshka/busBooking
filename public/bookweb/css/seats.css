@@ -1,0 +1,221 @@
+/* FONT AWESOME & not necessary for functions */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css');
+
+body {
+    padding-top: 15px;
+    background-color: #f9f9f9;
+}
+
+/*REQUIRED*/
+.carousel-row {
+    margin-bottom: 10px;
+}
+
+.slide-row {
+    padding: 0;
+    background-color: #ffffff;
+    min-height: 150px;
+    border: 1px solid #e7e7e7;
+    overflow: hidden;
+    height: auto;
+    position: relative;
+	margin-left:25%;
+}
+
+
+.slide-carousel {
+    width: 20%;
+    float: left;
+    display: inline-block;
+}
+
+.slide-carousel .carousel-indicators {
+    margin-bottom: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .5);
+}
+
+.slide-carousel .carousel-indicators li {
+    border-radius: 0;
+    width: 20px;
+    height: 6px;
+}
+
+.slide-carousel .carousel-indicators .active {
+    margin: 1px;
+}
+
+.slide-content {
+    position: absolute;
+    top: 0;
+    left: 20%;
+    display: block;
+    float: left;
+    width: 75%;
+    max-height: 76%;
+    padding: 1.5% 2% 2% 2%;
+    overflow-y: auto;
+}
+
+.slide-content h4 {
+    margin-bottom: 3px;
+    margin-top: 0;
+}
+
+.slide-footer {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    width: 60%;
+    height: 20%;
+    margin: 1%;
+
+}
+
+/* Scrollbars */
+.slide-content::-webkit-scrollbar {
+  width: 5px;
+}
+ 
+.slide-content::-webkit-scrollbar-thumb:vertical {
+  margin: 5px;
+  background-color: #999;
+  -webkit-border-radius: 5px;
+}
+ 
+.slide-content::-webkit-scrollbar-button:start:decrement,
+.slide-content::-webkit-scrollbar-button:end:increment {
+  height: 5px;
+  display: block;
+}
+/*seats Css*/
+	#holder{	
+	 height:200px;	 
+	 width:550px;
+	 background-color:#F5F5F5;
+	 border:1px solid #A4A4A4;
+	 margin-left:10px;	
+	}
+	 #place {
+	 position:relative;
+	 margin:7px;
+	 }
+     #place a{
+	 font-size:0.6em;
+	 }
+     #place li
+     {
+         list-style: none outside none;
+         position: absolute;   
+     }    
+     #place li:hover
+     {
+        background-color:yellow;      
+     } 
+	 #place .seat{
+	 background:url("../images/available_seat_img.gif") no-repeat scroll 0 0 transparent;
+	 height:33px;
+	 width:33px;
+	 display:block;	 
+	 }
+      #place .selectedSeat
+      { 
+		background:url("../images/booked_seat_img.gif") no-repeat scroll 0 0 transparent;     	 
+      }
+	   #place .selectingSeat
+      { 
+		background:url("../images/selected_seat_img.gif") no-repeat scroll 0 0 transparent;    	 
+      }
+	  #place .row-3, #place .row-4{
+		margin-top:10px;
+	  }
+	 #seatDescription{
+	 padding:0px;
+	 }
+	  #seatDescription li{
+	  verticle-align:middle;	  
+	  list-style: none outside none;
+	   padding-left:35px;
+	  height:35px;
+	  float:left;
+	  }
+	  
+	  #available_seat{
+		 background:url("../images/available_seat_img.gif") no-repeat scroll 0 0 transparent;
+		  
+		 }
+	#booked_seat{
+		background:url("../images/booked_seat_img.gif") no-repeat scroll 0 0 transparent;
+		  
+		}
+		  
+	#selected_seat{
+		 background:url("../images/selected_seat_img.gif") no-repeat scroll 0 0 transparent;  
+		 }	  
+		  
+		  
+		  
+		 /*seat number values alert box*/ 
+		  
+     *, *:after, *:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.confirm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  min-width: 280px;
+  max-width: 500px;
+  height: auto;
+  background: #E2E2E2;
+  border-radius: 10px;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid white;
+  animation: fade 1s ease 1 forwards;
+}
+.confirm h1 {
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 1.5rem 1rem 0.5rem;
+}
+.confirm p {
+  text-align: center;
+  font-size: 1rem;
+  margin: 0 2rem 4.5rem;
+}
+.confirm button {
+  background: transparent;
+  border: none;
+  color: #1678E5;
+  height: 3rem;
+  font-size: 1rem;
+  width: 50%;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+.confirm button:nth-of-type(1) {
+  border-top: 1px solid #B4B4B4;
+  border-right: 1px solid #B4B4B4;
+  left: 0;
+  border-radius: 0 0 0 10px;
+}
+.confirm button:nth-of-type(2) {
+  border-top: 1px solid #B4B4B4;
+  right: 0;
+  border-radius: 0 0 10px 0;
+}
+.confirm button:focus,
+.confirm button:hover {
+  font-weight: bold;
+  background: #EFEFEF;
+}
+.confirm button:active {
+  background: #D6D6D6;
+}
